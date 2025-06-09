@@ -29,7 +29,7 @@
           const ajax = new XMLHttpRequest();
           ajax.open("GET", `api/${product}.json`);
 
-          ajax.onload = function () {
+          ajax.onload = () => {
             if (ajax.status == 200) {
               resolve(ajax.responseText);
             } else {
